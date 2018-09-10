@@ -1,0 +1,168 @@
+<div class="backpage">
+  <div class="summarred text-center" style="margin-bottom: 20px; padding-top: 20px">
+    <a><h2><i class="material-icons" style="margin-right: 5px">assignment_turned_in</i><b>สรุปเกรด</b></h2></a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="jumbotron shadow p mb-3">
+      <div class="row">
+        <div class="col font">
+          <label for="File1" style="color: #1560BD"><h4><b>ชื่อผู้ตัดเกรด</b></h4></label>
+
+          <!-- <div class="d-flex ">
+            <div class="dropdown mr-1">
+              <button type="button" class="btn btn-secondary" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="-3,3">
+                <h4>จำนวนคน<i class="material-icons" style="margin-right: 5px">keyboard_arrow_down</i></h4>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                <a class="dropdown-item" >1</a>
+                <a class="dropdown-item" >2</a>
+                <a class="dropdown-item" >3</a>
+                <a class="dropdown-item" >4</a>
+                <a class="dropdown-item" >5</a>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <script type="text/javascript">
+            $(document).ready(function() {
+            var max_fields = 20; //maximum input boxes allowed
+            var wrapper = $("#items"); //Fields wrapper
+            var add_button = $(".add_field_button"); //Add button ID
+
+            var x = 1; //initlal text box count
+            $(add_button).click(function(e){ //on add input button click
+            e.preventDefault();
+            if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append('<div class="form-group"><label for="title">Author Email:</label>' +
+            '<input class="form-control col-md-11" id="author_email" type="email" placeholder=""name="author"/>' +
+            '<a href="#" class="remove_field"><i class="fa fa-times"></a></div>');
+            }
+            });
+
+            $(wrapper).on("click",".remove_field", function(e){ //user click on remove field
+            e.preventDefault(); $(this).parent('div').remove(); x--;
+            })
+            });
+          </script>
+          <div class="items">
+          <div class="form-group"><label>Author Email:</label>
+          <input id="author_email" class="form-control" name="author" required="required" type="EMAIL" /></div>
+          </div>
+          <button type="button" class="add_field_button">Add Field</button> -->
+
+          <form>
+            <div class="form-row">
+              <label for="inputPassword3" class="col-sm-1 col-form-label"><b>1</b></label>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="ชื่อ">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="นามสกุล">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="inputPassword3" class="col-sm-1 col-form-label"><b>2</b></label>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="ชื่อ">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="นามสกุล">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="inputPassword3" class="col-sm-1 col-form-label"><b>3</b></label>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="ชื่อ">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="นามสกุล">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="inputPassword3" class="col-sm-1 col-form-label"><b>4</b></label>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="ชื่อ">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="นามสกุล">
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="inputPassword3" class="col-sm-1 col-form-label"><b>5</b></label>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="ชื่อ">
+              </div>
+              <div class="form-group col">
+                <input type="text" class="form-control" id="inputPassword3" placeholder="นามสกุล">
+              </div>
+            </div>
+          </form>
+
+
+          <div class="form-group" style="margin-left: 250px">
+            <label for="exampleFormControlSelect1" style="color: #1560BD"><h4><b>เลือกเกรด</b></h4></label>
+            <select class="form-control form-group col-sm-3 font" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>2.5</option>
+                <option>3</option>
+                <option>3.25</option>
+                <option>3.5</option>
+                <option>4</option>
+                <option>4.5</option>
+                <option>5</option>
+            </select>
+          </div>
+
+
+        </div>
+
+        <div class="col">
+          <div style="color: #1560BD; margin-bottom: 20px">
+            <h4><b>รูปตัวอย่างซากเนื้อ</b></h4>
+          </div>
+          <div class="jumbotron jumimg"></div>
+        </div>
+
+        <div class="col-sm-4 font">
+          <label for="File1" style="color: #1560BD"><h4><b>ชื่อพนักงานตัดเกรด</b></h4></label>
+          <form>
+            <div class="form-row">
+              <div class="form-group col">
+                <label for="Firstname">ชื่อ</label>
+                <input type="text" class="form-control" placeholder="ชื่อ" readonly>
+              </div>
+              <div class="form-group col">
+                <label for="Lastname">นามสกุล</label>
+                <input type="text" class="form-control" placeholder="นามสกุล" readonly>
+              </div>
+            </div>
+          </form>
+          <table class="table table-bordered col-sm-3 text-center">
+            <thead class="thead">
+              <tr>
+                <th scope="col" style="color: #1560BD"><h4><b>เกรดที่ได้</b></h4></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="gradetext" style="color: rgb(72, 255, 0)"><b>5</b></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="text-center">
+      <button routerLink="/sumgrade" type="button" class="btn btn-warning pull-center" style="vertical-align:middle ;margin-right: 10px"><h4><b>ย้อนกลับ</b></h4></button>
+      <button routerLink="/sumshow" type="button" class="btn btn-success pull-center" style="vertical-align:middle"><h4><b>บันทึก</b></h4></button>
+    </div>
+  </div>
+</div>
