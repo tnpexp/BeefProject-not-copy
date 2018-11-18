@@ -1,225 +1,209 @@
 <div class="backpage">
   <div class="Grading text-center" style="margin-bottom: 20px; padding-top: 20px">
-    <a><h2><i class="material-icons" style="margin-right: 5px">assignment</i><b>ตัดเกรด</b></h2></a>
+    <a>
+      <h2><i class="material-icons" style="margin-right: 5px">assignment</i><b>ตัดเกรด</b></h2>
+    </a>
   </div>
 
   <div class="container-fluid">
-    <div class="jumbotron shadow p mb-3 ">
-      <div class="row">
-        <div class="col">
-          <div class="row">
-            <div class="col-sm-7 font1">
-              <!-- <form class="chooseimg">
-                <div class="form-group">
-                  <label for="File1" style="color: #1560BD"><h4><b>เลือกรูปตัวอย่างซากเนื้อที่ต้องการ</b></h4></label>
-                  <input type="file" class="file form-control-file col-sm-12 shadow p-2 mb-1 bg-white rounded" id="File1">
-                </div>
-                <img id='File1'>
-              </form> -->
-              <label for="File1" style="color: #1560BD"><h4><b>เลือกรูปตัวอย่างซากโคที่ต้องการ</b></h4></label>
-              <div class="input-group mb-3 font1">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="inputGroupFileAddon01">อัพโหลดรูป</span>
-                </div>
-                <div class="custom-file">
-                  <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
-                  <label class="custom-file-label" for="inputGroupFile01"><h5>เลือกรูปซากโค</h5></label>
-                </div>
+    <div class="card shadow p mb-3 ">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <!-- <form class="chooseimg">
+                  <div class="form-group">
+                    <label for="File1" style="color: #1560BD"><h4><b>เลือกรูปตัวอย่างซากเนื้อที่ต้องการ</b></h4></label>
+                    <input type="file" class="file form-control-file col-sm-12 shadow p-2 mb-1 bg-white rounded" id="File1">
+                  </div>
+                  <img id='File1'>
+                </form> -->
+            <label for="File1" style="color: #1560BD">
+              <h4><b>เลือกรูปตัวอย่างซากโคที่ต้องการ</b></h4>
+            </label>
+            <div class="input-group mb-3 font1">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupFileAddon01">อัพโหลดรูป</span>
               </div>
-              <div class="jumbotron jumimg text-center">
-                  <label class="textimg"><h5>กรุณาเลือกรูป</h5></label>
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                <label class="custom-file-label" for="inputGroupFile01">
+                  <h5>เลือกรูปซากโค</h5>
+                </label>
               </div>
-
-              <!-- <div class="container">
-                <div style="color: #1560BD; margin-bottom: 20px">
-                  <h4>เลือกรูปตัวอย่างซากเนื้อที่ต้องการ</h4>
-                </div>
-                <app-form-upload></app-form-upload>
-                <br/>
-                <br/>
-                <app-list-upload></app-list-upload>
-              </div> -->
+            </div>
+            <div class="jumbotron jumimg text-center">
+              <label class="textimg">
+                <h5>กรุณาเลือกรูป</h5>
+              </label>
             </div>
 
-            <div class="col-sm-5 font2 tapside">
-              <label for="File1" style="color: #1560BD"><h4><b>เลือกเกณฑ์การตัดเกรด</b></h4></label>
-              <!-- <div class="custom-control form-control-lg custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember me</label>
-              </div> -->
-              <div class="row mb-5">
-                <div class="col-sm-4">
-                  <div class="custom-control form-control-lg custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">ลายเนื้อ</label>
+            <!-- <div class="container">
+                  <div style="color: #1560BD; margin-bottom: 20px">
+                    <h4>เลือกรูปตัวอย่างซากเนื้อที่ต้องการ</h4>
                   </div>
-                  <div class="custom-control form-control-lg custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck2">
-                    <label class="custom-control-label" for="customCheck2">สีเนื้อ</label>
-                  </div>
-                  <div class="custom-control form-control-lg custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck3">
-                    <label class="custom-control-label" for="customCheck3">สีไขมัน</label>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="custom-control form-control-lg custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck4">
-                    <label class="custom-control-label" for="customCheck4">ค่า pH</label>
-                  </div>
-                  <div class="custom-control form-control-lg custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="customCheck5">
-                    <label class="custom-control-label" for="customCheck5">ความกว้างหน้าเนื้อ</label>
-                  </div>
-                </div>
-              </div>
-
-              <label for="File1" style="color: #1560BD"><h4><b>ชื่อผู้ตัดเกรด</b></h4></label>
-              <form>
-                <div class="form-row">
-                  <div class="form-group col">
-                    <label for="Firstname">ชื่อ</label>
-                    <input type="text" class="form-control" placeholder="ชื่อ">
-                  </div>
-                  <div class="form-group col">
-                    <label for="Lastname">นามสกุล</label>
-                    <input type="text" class="form-control" placeholder="นามสกุล">
-                  </div>
-                </div>
-              </form>
-            </div>
+                  <app-form-upload></app-form-upload>
+                  <br/>
+                  <br/>
+                  <app-list-upload></app-list-upload>
+                </div> -->
           </div>
-          <!-- <div class="row">
-            <div class="col">
-              <label for="File1" style="color: #1560BD"><h4><b>ชื่อผู้ตัดเกรด</b></h4></label>
-              <form>
-                <div class="form-row">
-                  <div class="form-group col">
-                    <label for="Firstname">ชื่อ</label>
-                    <input type="text" class="form-control" placeholder="ชื่อ">
-                  </div>
-                  <div class="form-group col">
-                    <label for="Lastname">นามสกุล</label>
-                    <input type="text" class="form-control" placeholder="นามสกุล">
-                  </div>
-                </div>
-              </form>
+
+          <div class="col-sm-2">
+            <label for="File1" style="color: #1560BD">
+              <h4><b>เลือกเกณฑ์การตัดเกรด</b></h4>
+            </label>
+            <!-- <div class="custom-control form-control-lg custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Remember me</label>
+                </div> -->
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">ลายเนื้อ</label>
             </div>
-            <div class="col">
-              <label for="File1" style="color: #1560BD"><h4><b>ชื่อผู้ร่วมตัดเกรด</b></h4></label>
-              <form>
-                <div class="form-row">
-                  <div class="form-group col">
-                    <label for="Firstname">ชื่อ</label>
-                    <input type="text" class="form-control" placeholder="ชื่อ">
-                  </div>
-                  <div class="form-group col">
-                    <label for="Lastname">นามสกุล</label>
-                    <input type="text" class="form-control" placeholder="นามสกุล">
-                  </div>
-                </div>
-              </form>
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck2">
+              <label class="custom-control-label" for="customCheck2">สีเนื้อ</label>
             </div>
-          </div> -->
-        </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck3">
+              <label class="custom-control-label" for="customCheck3">สีไขมัน</label>
+            </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck4">
+              <label class="custom-control-label" for="customCheck4">ค่า pH</label>
+            </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck5">
+              <label class="custom-control-label" for="customCheck5">ความกว้างหน้าเนื้อ</label>
+            </div>
 
 
-        <div class="col-sm-4 font2">
+            <!-- <label for="File1" style="color: #1560BD">
+                  <h4><b>ชื่อผู้ตัดเกรด</b></h4>
+                </label>
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col">
+                      <label for="Firstname">ชื่อ</label>
+                      <input type="text" class="form-control" placeholder="ชื่อ">
+                    </div>
+                    <div class="form-group col">
+                      <label for="Lastname">นามสกุล</label>
+                      <input type="text" class="form-control" placeholder="นามสกุล">
+                    </div>
+                  </div>
+                </form> -->
+          </div>
+
+          <div class="col-sm-5 font2">
             <div style="color: #1560BD; margin-bottom: 20px">
               <h4><b>ข้อมูลโค</b></h4>
             </div>
-          <form>
-            <fieldset disabled>
-              <div class="form-row row mb-1">
-                <label for="inputEmail" class="col-sm-2 col-form-label">รหัสโค</label>
-                <div class="col">
-                  <input type="text" class="form-control" id="inputEmail3" placeholder="00000001" >
-                </div>
-              </div>
-              <div class="form-row ">
-                <label for="inputEmail" class="col-sm-2 col-form-label">บาร์โค้ด</label>
-                <div class="form-group col input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">ซากขาว</span>
-                  </div>
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="00000001-1" aria-label="Dollar amount" >
-                </div>
-                <div class="form-group col input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">ซากขาว</span>
-                  </div>
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="00000001-2" aria-label="Dollar amount" >
-                </div>
-              </div>
-              <div class="form-row row mb-1">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่เชือด</label>
-                <div class="col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="01-01-2018" >
-                </div>
-              </div>
-              <div class="form-row row mb-1">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่บ่ม</label>
-                <div class="col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="01-01-2018" >
-                </div>
-              </div>
-              <div class="form-row row mb-1">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่ตัดเกรด</label>
-                <div class="col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="08-01-2018" >
-                </div>
-              </div>
-              <div class="form-row ">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">น้ำหนัก</label>
-                <div class="form-group col input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">ซากซ้าย</span>
-                  </div>
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="300" aria-label="Dollar amount" >
-                  <div class="input-group-append">
-                    <span class="input-group-text">กิโลกรัม</span>
+            <form>
+              <fieldset disabled>
+                <div class="form-row row mb-1">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">รหัสโค</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="00000001">
                   </div>
                 </div>
-                <div class="form-group col input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">ซากขวา</span>
+                <div class="form-row ">
+                  <label for="inputEmail" class="col-sm-2 col-form-label">บาร์โค้ด</label>
+                  <div class="form-group col input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ซากขาว</span>
+                    </div>
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="00000001-1" aria-label="Dollar amount">
                   </div>
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="295" aria-label="Dollar amount" >
-                  <div class="input-group-append">
-                    <span class="input-group-text">กิโลกรัม</span>
+                  <div class="form-group col input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ซากขาว</span>
+                    </div>
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="00000001-2" aria-label="Dollar amount">
                   </div>
                 </div>
-              </div>
-              <div class="form-row row mb-1">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">ห้องบ่ม</label>
-                <div class="col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="1" >
+                <div class="form-row row mb-1">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่เชือด</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="01-01-2018">
+                  </div>
                 </div>
-              </div>
-              <div class="form-row mb-1">
-                <label for="inputPassword3" class="col-sm-2 col-form-label">เจ้าของโค</label>
-                <div class="form-group col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="นายสุขสวัสดิ์" >
+                <div class="form-row row mb-1">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่บ่ม</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="01-01-2018">
+                  </div>
                 </div>
-                <div class="form-group col">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="อารมณ์ดี" >
+                <!-- <div class="form-row row mb-1">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">วันที่พร้อมตัดเกรด</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="08-01-2018">
+                  </div>
+                </div> -->
+                <div class="form-row ">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">น้ำหนัก</label>
+                  <div class="form-group col input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ซากซ้าย</span>
+                    </div>
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="300" aria-label="Dollar amount">
+                    <div class="input-group-append">
+                      <span class="input-group-text">กิโลกรัม</span>
+                    </div>
+                  </div>
+                  <div class="form-group col input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ซากขวา</span>
+                    </div>
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="295" aria-label="Dollar amount">
+                    <div class="input-group-append">
+                      <span class="input-group-text">กิโลกรัม</span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <!-- <div class="form-group row">
-                <div class="col-sm-10">
-                  <button routerLink="/graded" type="button" class="btn btn-primary">ประมวลผล</button>
+                <div class="form-row row mb-1">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">ห้องบ่ม</label>
+                  <div class="col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="1">
+                  </div>
                 </div>
-              </div> -->
-            </fieldset>
-          </form>
+                <div class="form-row mb-1">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">เจ้าของโค</label>
+                  <div class="form-group col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="นายสุขสวัสดิ์">
+                  </div>
+                  <div class="form-group col">
+                    <input type="text" class="form-control" id="inputPassword3" placeholder="อารมณ์ดี">
+                  </div>
+                </div>
+                <!-- <div class="form-group row">
+                  <div class="col-sm-10">
+                    <button routerLink="/graded" type="button" class="btn btn-primary">ประมวลผล</button>
+                  </div>
+                </div> -->
+              </fieldset>
+            </form>
+          </div>
         </div>
+      </div>
+      <div class="text-center mb-3">
+        <button routerLink="/aboutcattle" type="button" class="btn btn-danger" style="vertical-align:middle pull-center; margin-right: 10px">
+          <h4><b>ย้อนกลับ</b></h4>
+        </button>
+        <button routerLink="/graded" type="button" class="btn btn-primary" style="vertical-align:middle pull-center">
+          <h4><b>ประมวลผล</b></h4>
+        </button>
       </div>
     </div>
   </div>
-  <div class="container mb-5">
+  <!-- <div class="container mb-5">
     <div class="text-center">
-      <button routerLink="/aboutcattle" type="button" class="btn btn-danger" style="vertical-align:middle pull-center; margin-right: 10px"><h4><b>ย้อนกลับ</b></h4></button>
-      <button routerLink="/graded" type="button" class="btn btn-primary" style="vertical-align:middle pull-center"><h4><b>ประมวลผล</b></h4></button>
+      <button routerLink="/aboutcattle" type="button" class="btn btn-danger" style="vertical-align:middle pull-center; margin-right: 10px">
+        <h4><b>ย้อนกลับ</b></h4>
+      </button>
+      <button routerLink="/graded" type="button" class="btn btn-primary" style="vertical-align:middle pull-center">
+        <h4><b>ประมวลผล</b></h4>
+      </button>
     </div>
-  </div>
+  </div> -->
 </div>

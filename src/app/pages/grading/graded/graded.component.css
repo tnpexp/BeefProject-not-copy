@@ -34,7 +34,8 @@
 .btn{
   font-size: 1.4em;
   width: 150px;
-  cursor: pointer;
+  height: 100%;
+  padding-top: 15px;
 }
 
 .font{

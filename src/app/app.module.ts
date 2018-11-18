@@ -20,6 +20,8 @@ import { FormsModule} from '@angular/forms';
 
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireStorageModule } from 'angularfire2/storage';
 
 import { LoginComponent } from './authen/login/login.component';
 import { RegisterComponent } from './authen/register/register.component';
@@ -34,6 +36,9 @@ import { ReadycutComponent } from './pages/aboutcattle/readycut/readycut.compone
 import { SumgradeComponent } from './pages/grading/sumgrade/sumgrade.component';
 import { SummarredComponent } from './pages/grading/sumgrade/summarred/summarred.component';
 import { SumshowComponent } from './pages/grading/sumgrade/sumshow/sumshow.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AddcattleComponent } from './adddata/addcattle/addcattle.component';
 
 
 const routes: Routes = [
@@ -49,7 +54,8 @@ const routes: Routes = [
   { path: 'readycut', component: ReadycutComponent },
   { path: 'sumgrade', component: SumgradeComponent },
   { path: 'summarred', component: SummarredComponent },
-  { path: 'sumshow', component: SumshowComponent }
+  { path: 'sumshow', component: SumshowComponent },
+  { path: 'addcattle', component: AddcattleComponent }
 ];
 
 @NgModule({
@@ -69,20 +75,25 @@ const routes: Routes = [
     ReadycutComponent,
     SumgradeComponent,
     SummarredComponent,
-    SumshowComponent
+    SumshowComponent,
+    AddcattleComponent
   ],
   imports: [
     ModalModule.forRoot(),
     MatButtonModule,
     MatCheckboxModule,
     BrowserModule,
+    FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     UiModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule
   ],
   exports: [MatButtonModule, MatCheckboxModule, RouterModule],
   providers: [UploadFileService],

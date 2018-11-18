@@ -3,9 +3,40 @@
 </div>
 <div class="backpage">
   <div class="container-fluid">
+    <!-- <div class="row justify-content-end">
+      <div class="col-sm-4">
+        <div class="text-right">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">ค้นหา</span>
+            </div>
+            <input type="text" class="form-control search-input" aria-label="Amount (to the nearest dollar)">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class="material-icons">search</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
     <div class="card font shadow p mb-3">
       <div class="card-header" style="background-color: #007FFF;color: #ffffff">
-        <b>รายการซากโค</b>
+        <div class="row" style="width: 100%">
+          <div class="col-6"><b>รายการซากโค</b></div>
+          <div class="col">
+            <div style="margin-left:50%">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">ค้นหา</span>
+                </div>
+                <input type="text" class="form-control search-input" aria-label="">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="material-icons">search</i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="card-body">
         <table cellspacing="0" cellpadding="0" class="table table-bordered table-striped table-hover text-center">
@@ -18,16 +49,12 @@
               <td rowspan="2">วันที่เชือด</td>
               <td rowspan="2">วันที่เข้าบ่ม</td>
               <td rowspan="2">วันที่พร้อมตัดเกรด</td>
+              <td rowspan="2">วันที่ตัดเกรด</td>
               <th colspan="2">น้ำหนัก kg.</th>
               <td rowspan="2">ห้องเย็น</td>
               <td rowspan="2">เจ้าของโค</td>
               <td rowspan="2">สถานะ / เกรด</td>
-              <!-- <th scope="col">
-                <div class="custom-control custom-checkbox mr-sm-2">
-                  <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                  <label class="custom-control-label" for="customControlAutosizing" style="padding-left: 5px">เลือก</label>
-                </div>
-              </th> -->
+
             </tr>
             <tr>
               <th scope="col">ซากซ้าย</th>
@@ -37,7 +64,26 @@
               <th scope="col">ซากขวา</th>
             </tr>
           </thead>
+
           <tbody>
+            <tr *ngFor="let data of data">
+              <td></td>
+              <td>{{data.id}}</td>
+              <td>{{data.left}}</td>
+              <td>{{data.right}}</td>
+              <td>{{data.datekill}}</td>
+              <td>{{data.datedry}}</td>
+              <td>{{data.dateready}}</td>
+              <td></td>
+              <td>{{data.wleft}}</td>
+              <td>{{data.wright}}</td>
+              <td>{{data.roomdry}}</td>
+              <td>{{data.owncattle}}</td>
+              <td>{{data.status}}</td>
+            </tr>
+          </tbody>
+
+          <!-- <tbody>
             <tr>
               <th scope="row">1</th>
               <td>00000001</td>
@@ -46,17 +92,18 @@
               <td>01-01-2018</td>
               <td>01-01-2018</td>
               <td>08-01-2018</td>
+              <td>08-01-2018</td>
               <td>225</td>
               <td>225</td>
               <td>01</td>
               <td>นายสดชื่น อุ่นใจ</td>
               <td class="text-success"><b>5</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
                   <label class="custom-control-label" for="customCheck1" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">2</th>
@@ -66,17 +113,18 @@
               <td>03-01-2018</td>
               <td>03-01-2018</td>
               <td>10-01-2018</td>
+              <td>10-01-2018</td>
               <td>550</td>
               <td>225</td>
               <td>02</td>
               <td>นางชื่น อุ่นติ้บ</td>
               <td class="text-success"><b>4.5</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck2">
                   <label class="custom-control-label" for="customCheck2" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">3</th>
@@ -85,100 +133,117 @@
               <td>00000003-02</td>
               <td>05-01-2018</td>
               <td>05-01-2018</td>
-              <td>16-01-2018</td>
+              <td>12-01-2018</td>
+              <td>-</td>
               <td>350</td>
               <td>225</td>
               <td>01</td>
               <td>นางชื่นบาน ใจสว่าง</td>
+              <td>
+                <button routerLink="/grading" type="button" class="btn btn-sm text-light" style="background-color: limegreen"><b>ตัดเกรด</b></button>
+              </td>
               <td class="text-warning"><b>พร้อม</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck3">
                   <label class="custom-control-label" for="customCheck3" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">4</th>
               <td>00000004</td>
               <td>00000004-01</td>
               <td>00000004-02</td>
-              <td>02-02-2018</td>
-              <td>02-02-2018</td>
-              <td>12-02-2018</td>
+              <td>05-01-2018</td>
+              <td>05-01-2018</td>
+              <td>12-01-2018</td>
+              <td>-</td>
               <td>420</td>
               <td>225</td>
               <td>03</td>
               <td>นายส่งเสริม ใจกว้าง</td>
+              <td>
+                <button routerLink="/grading" type="button" class="btn btn-sm text-light" style="background-color: limegreen"><b>ตัดเกรด</b></button>
+              </td>
               <td class="text-warning"><b>พร้อม</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck4">
                   <label class="custom-control-label" for="customCheck4" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">5</th>
               <td>00000005</td>
               <td>00000005-01</td>
               <td>00000005-02</td>
-              <td>11-02-2018</td>
-              <td>11-02-2018</td>
-              <td>21-02-2018</td>
+              <td>05-01-2018</td>
+              <td>05-01-2018</td>
+              <td>12-01-2018</td>
+              <td>-</td>
               <td>340</td>
               <td>225</td>
               <td>02</td>
               <td>นายสมสัก มุ่งมั่น</td>
+              <td>
+                <button routerLink="/grading" type="button" class="btn btn-sm text-light" style="background-color: limegreen"><b>ตัดเกรด</b></button>
+              </td>
               <td class="text-warning"><b>พร้อม</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck5">
                   <label class="custom-control-label" for="customCheck5" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">6</th>
               <td>00000006</td>
               <td>00000006-01</td>
               <td>00000006-02</td>
-              <td>05-03-2018</td>
-              <td>05-03-2018</td>
-              <td>16-03-2018</td>
+              <td>05-01-2018</td>
+              <td>05-01-2018</td>
+              <td>12-01-2018</td>
+              <td>-</td>
               <td>300</td>
               <td>225</td>
               <td>01</td>
               <td>นายส่งเดท มั่งมี</td>
+              <td>
+                <button routerLink="/grading" type="button" class="btn btn-sm text-light" style="background-color: limegreen"><b>ตัดเกรด</b></button>
+              </td>
               <td class="text-warning"><b>พร้อม</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck6">
                   <label class="custom-control-label" for="customCheck6" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
             <tr>
               <th scope="row">7</th>
               <td>00000007</td>
               <td>00000007-01</td>
               <td>00000007-02</td>
-              <td>01-04-2018</td>
-              <td>02-04-2018</td>
-              <td>8-04-2018</td>
+              <td>10-01-2018</td>
+              <td>10-01-2018</td>
+              <td>17-01-2018</td>
+              <td>-</td>
               <td>280</td>
               <td>225</td>
               <td>03</td>
               <td>นายส่งเดท มั่งมี</td>
               <td class="text-danger"><b>ไม่พร้อม</b></td>
-              <!-- <td>
+              <td>
                 <div class="custom-control form-control-lg custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="customCheck6">
                   <label class="custom-control-label" for="customCheck6" style="color: #ffffff">.</label>
                 </div>
-              </td> -->
+              </td>
             </tr>
-          </tbody>
+          </tbody> -->
         </table>
       </div>
     </div>
@@ -189,4 +254,3 @@
     </div>
   </div> -->
 </div>
-

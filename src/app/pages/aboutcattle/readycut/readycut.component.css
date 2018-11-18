@@ -38,3 +38,7 @@ thead > tr > td{
   text-align: center;
   vertical-align: middle;
 }
+
+.search-input{
+  height: 43px;
+}

@@ -3,16 +3,16 @@ import { NgForm } from '@angular/forms';
 import {AngularFireDatabase} from 'angularfire2/database';
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-addcattle',
+  templateUrl: './addcattle.component.html',
+  styleUrls: ['./addcattle.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class AddcattleComponent implements OnInit {
 
   constructor(private db: AngularFireDatabase) { }
   ngOnInit() {}
-  addData(data: NgForm) {
-    this.db.list('/beefproject').push(data.value);
+  addcattle(data: NgForm) {
+    this.db.list('/cattle').push(data.value);
     console.log(data.value);
   }
 

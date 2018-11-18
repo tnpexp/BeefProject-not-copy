@@ -1,0 +1,124 @@
+<div class="backpage">
+  <div class="Grading text-center" style="margin-bottom: 20px; padding-top: 20px">
+    <a>
+      <h2><b>ADD CATTLE</b></h2>
+    </a>
+  </div>
+
+  <!-- <div class="container">
+    <div class="jumbotron">
+      <form (ngSubmit)="addcattle(datauser)" #datauser="ngForm">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="formGroup1">รหัสโค</label>
+              <input type="text" class="form-control" id="formGroup1" name="id" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup2">ซากซ้าย</label>
+              <input type="text" class="form-control" id="formGroup2" name="left" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup3">ซากขวา</label>
+              <input type="text" class="form-control" id="formGroup3" name="right" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup4">วันที่เชือด</label>
+              <input type="date" class="form-control" id="formGroup4" name="datekill" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup5">วันที่เเข้าบ่ม</label>
+              <input type="date" class="form-control" id="formGroup5" name="datedry" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup6">วันที่พร้อม</label>
+              <input type="date" class="form-control" id="formGroup6" name="dateready" ngModel>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label for="formGroup7">นน ซ้าย</label>
+              <input type="text" class="form-control" id="formGroup7" name="wleft" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup8">นน ขวา</label>
+              <input type="text" class="form-control" id="formGroup8" name="wright" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup9">ห้องบ่ม</label>
+              <input type="text" class="form-control" id="formGroup9" name="roomdry" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup10">เจ้าของ</label>
+              <input type="text" class="form-control" id="formGroup10" name="owncattle" ngModel>
+            </div>
+
+            <div class="form-group">
+              <label for="formGroup11">สถานะ</label>
+              <input type="text" class="form-control" id="formGroup11" name="status" ngModel>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success mt-4" style="margin-left: 25% ;width: 50%;margin-right: 25%"><b>เพิ่ม</b></button>
+      </form>
+    </div>
+  </div> -->
+
+  <div class="card">
+    <div class="card-body">
+      <form (ngSubmit)="addcattle(datauser)" #datauser="ngForm">
+        <table cellspacing="0" cellpadding="0" class="table table-bordered table-striped table-hover text-center">
+          <colgroup span="2"></colgroup>
+          <thead class="thead text-dark" style="background-color: #ffffff;">
+            <tr>
+              <td rowspan="2">ลำดับ</td>
+              <td rowspan="2">รหัสโค</td>
+              <th colspan="2">บาร์โค้ด</th>
+              <td rowspan="2">วันที่เชือด</td>
+              <td rowspan="2">วันที่เข้าบ่ม</td>
+              <td rowspan="2">วันที่พร้อมตัดเกรด</td>
+              <td rowspan="2">วันที่ตัดเกรด</td>
+              <th colspan="2">น้ำหนัก kg.</th>
+              <td rowspan="2">ห้องเย็น</td>
+              <td rowspan="2">เจ้าของโค</td>
+              <td rowspan="2">สถานะ / เกรด</td>
+            </tr>
+            <tr>
+              <th scope="col">ซากซ้าย</th>
+              <th scope="col">ซากขวา</th>
+              <th scope="col">ซากซ้าย</th>
+              <th scope="col">ซากขวา</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td></td>
+              <td><input type="text" class="form-control" id="formGroup1" name="id" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup2" name="left" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup3" name="right" ngModel></td>
+              <td><input type="date" class="form-control" id="formGroup4" name="datekill" ngModel></td>
+              <td><input type="date" class="form-control" id="formGroup4" name="datedry" ngModel></td>
+              <td><input type="date" class="form-control" id="formGroup4" name="dateready" ngModel></td>
+              <td></td>
+              <td><input type="text" class="form-control" id="formGroup4" name="wleft" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup4" name="wright" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup4" name="roomdry" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup4" name="owncattle" ngModel></td>
+              <td><input type="text" class="form-control" id="formGroup4" name="status" ngModel></td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="submit" class="btn btn-success mt-4" style="margin-left: 25% ;width: 50%;margin-right: 25%"><b>เพิ่ม</b></button>
+      </form>
+    </div>
+  </div>
+</div>

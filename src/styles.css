@@ -99,7 +99,7 @@ header{
   overflow: hidden;
 }
 
-@media only screen and (max-width:1920px) {
+/*@media only screen and (max-width:1920px) {
   .main {
     width: 100%;
   }
@@ -111,8 +111,8 @@ header{
     margin-left: 15%;
     margin-right: 15%;
   }
-}
-@media only screen and (max-width:900px) {
+}*/
+/*@media only screen and (max-width:900px) {
   .main {
     width: 100%;
   }
@@ -127,7 +127,7 @@ header{
   .fontsize{
     font-size: 0.8rem;
   }
-}
+}*/
 /* @media only screen and (max-width:500px) {
 
   .menu, .main, .right {
@@ -136,3 +136,7 @@ header{
 
   }
 } */
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Roboto', sans-serif; }

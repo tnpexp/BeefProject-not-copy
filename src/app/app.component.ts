@@ -11,6 +11,6 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   constructor(private db: AngularFireDatabase) {}
   addWiki(data: NgForm) {
-       this.db.list('/demoproject').push(data.value);
+       this.db.list('/beefproject').push(data.value);
   }
 }
